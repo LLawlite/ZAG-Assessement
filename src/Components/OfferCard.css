@@ -1,0 +1,33 @@
+.parentDiv {
+    overflow: hidden;
+
+    display: flex;
+    overflow-x: scroll;
+}
+
+.child {
+
+    padding-right: 17px;
+    /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box;
+    /* So the width will be 100% + 17px */
+}
+
+.parentDiv {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.parentDiv::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.parentDiv {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}

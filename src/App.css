@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.parentDiv {
+  overflow: hidden;
+
+  display: flex;
+  overflow-x: scroll;
+}
+
+.child {
+
+  padding-right: 17px;
+  /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box;
+  /* So the width will be 100% + 17px */
+}
+
+.parentDiv {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.parentDiv::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.parentDiv {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.footer-container {
+  -webkit-box-shadow: 0px -1px 6pxrgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -1px 6px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px -1px 6px rgba(50, 50, 50, 0.75);
+}
+
+.itemDetails-container {
+  -webkit-box-shadow: 0px -1px 6pxrgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -1px 6px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px -1px 6px rgba(50, 50, 50, 0.75);
+
+}
+
+.payment-card-long-input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 12px;
+  border: 2px solid rgb(147, 146, 146);
+}
+
+.payment-card-label {
+  font-family: 'Poppins';
+  font-size: 13px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+.payment-card-short-input {
+  padding: 12px;
+  width: 110px;
+  border-radius: 12px;
+  border: 2px solid rgb(147, 146, 146);
+
+}
